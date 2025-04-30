@@ -182,10 +182,11 @@ font-family: 'Anton', sans-serif;
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    width: 90%;
+    align-content: center;
+    width: 100%;
     gap: 20px;
     height: 90%;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 
@@ -196,9 +197,8 @@ font-family: 'Anton', sans-serif;
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
     background-color: #2C2A4A;
-    color: #F5F5F5;
-    
-    
+    color: #F5F5F5;   
+    margin-bottom: 5vw;
 }
 
 .alignTextContainer{
@@ -233,7 +233,7 @@ font-family: 'Anton', sans-serif;
     width: 100%;
     display: flex;
    justify-content: flex-end;
-   align-items: flex-end;
+   align-items: center;
    border-top: 1px solid white;
     /* margin-right: 14vw; */
 }
@@ -255,9 +255,57 @@ font-family: 'Anton', sans-serif;
     margin: 0;
 }
 
+.receiveOurNews{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+  background-color: #2C2A4A;
+  color: white;
+
+}
+
+.receiveOurNews h1{
+    font: bold;
+    margin: 20px;
+}
+
+.receiveOurNews p{
+    margin-bottom:3vw;
+}
+
+.singnUpInput{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+
+.InputSign{
+  width: 24vw;
+  font-size: 18px;
+  height:33px;
+  margin: 10px; 
+  border-radius: 10px;
+  padding-left: 8px;
+  border: 0000;
+}
+
+.finalInfo{
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2C2A4A;
+    margin: 12px;
+}
+
+.finalInfo h1{
+    margin: 0;
+}
 
 
-  @media (max-width: 450px) {
+  @media (max-width: 680px) {
 
 body{
     overflow-x:hidden;
@@ -397,9 +445,63 @@ a {
 
 }
 
+.optionsOfPromotion {
+    flex-direction: column;
+    align-items: center;
+
+}
+.packOfTravel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 820vw;
+    width: 100%;
+    margin-bottom: 3vw;
+ /* flex-wrap: wrap; */
+    margin-bottom: 12vw;
+}
+
+.alignText{
+    width:90vw;
+    margin-left: 4vw;
+    margin-bottom: 1vw;
+
+}
+.alignContainer{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 760vw;
+    width: 80%;
+    align-items: center;
+    margin: 0;
+}
+
+.ContainerPack{
+    width: 80vw;
+    height: 160vw;
+    margin: 0px;
+
+}
+
+.ContainerPack img{
+    width: 80vw;
+}
+
+.styleBtnBuy{
+    height: 20vw;
+    align-items: center;
+   justify-content: center;
+    /* margin-right: 14vw; */
+}
+
+.buyTicket{
+    width: 27vw;
+    height: 8vw;
+}
+
 
 }   
-@media (min-width: 800px) and ( max-width: 1050px){
+@media (min-width: 880px) and ( max-width: 1050px){
 
 .logo{
     font-size: 30px;
