@@ -1,6 +1,13 @@
 body{
     padding: 0;
      margin: 0; 
+     font-family: 'Playfair Display', serif;
+     overflow-x: hidden;
+}
+
+h1 h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 #navBar{
@@ -14,25 +21,31 @@ body{
     font-size: 15px;
 }
 
-.align{
+.navList{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 72%;
-}
-
-
-ul{
     list-style: none;
-    display: flex; 
     flex-direction: row;
-    width: 40px;
+    width: 83%;
 }
 
 a {
     text-decoration: none;
     color: white;
     margin: 7px;
+}
+
+.mobileMenu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobileMenu div{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
 }
 
 .logo{
@@ -66,10 +79,14 @@ a {
 
 .callActionTitle h1 span{
     color:  #454277;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
+
 .callActionTitle p{
-    font-size:18px;  
+    font-size:26px;  
+    width: 36vw;
 }
 
 .btnExploreMore{
@@ -77,7 +94,7 @@ a {
     border: 2px solid #454277;
     color: white;
     padding: 10px 20px;
-    height: 48px;
+    height: 40px;
     font-weight: bold;
     border-radius: 5px;
     width: 10vw;
@@ -90,4 +107,352 @@ a {
     font-size: 22px;
   }
 
-  
+  .promotion{
+    background-color: #2C2A4A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 17vw;
+}
+
+.promotion h1{
+    margin-top: 3vw;
+    font-size: 30px;
+    font: bold;
+    
+}
+
+.promotion p{
+    margin: 0;
+    font: 26px;
+
+}
+
+.optionsOfPromotion{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+ margin-top: 2vw;
+}
+
+.options{
+    width: 15vw;
+    border-radius: 30px;
+    height: 3vw;
+    background-color: #fff;
+    border: 0000;
+    color: #454277;
+    cursor: pointer;
+    font-size: 20px;
+    font: bold;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+}
+
+.packOfTravel{
+    background-color: 	#F5F5F5;
+
+}
+
+.alignText{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #2C2A4A;
+    /* margin-top: 5vw; */
+    margin-bottom: 2vw;
+
+
+}
+
+.alignText h2{
+    margin-top: 4vw;
+font-size: 30px;
+font: bold;
+font-family: 'Anton', sans-serif;
+}
+
+.alignText p{
+ font-size: 18px;
+}
+
+.alignContainer{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 90%;
+    gap: 20px;
+    height: 90%;
+    margin: 20px;
+}
+
+
+.ContainerPack{
+    margin: 40px;
+    width: 22vw;
+    height: 34vw;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    background-color: #2C2A4A;
+    color: #F5F5F5;
+    
+    
+}
+
+.alignTextContainer{
+ margin-left:10px ;
+}
+
+.ContainerPack img{
+    width: 22vw;
+    margin-bottom: 3px;
+    border-radius:  10px; ;
+}
+
+
+.ContainerPack h1{
+    font-size: 24px;
+    /* margin-bottom: 5px; */
+    font: bold;
+}
+
+.leaving{
+    color: #dfdede;
+    font-size: 17px;
+    font: bold;
+}
+
+.ContainerPack p{
+    color: #b6b4b4;
+}
+
+
+.styleBtnBuy{
+    width: 100%;
+    display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   border-top: 1px solid white;
+    /* margin-right: 14vw; */
+}
+
+.buyTicket{
+ width: 7vw;
+ height: 2vw;
+ border: 0000;
+ border-radius: 5px;
+ font-size: 17px;
+ color: #454277;
+ font: bold;
+ margin-right: 2vw;
+ margin-top: 8px;
+}
+
+.price{
+    font-size: 18px;
+    margin: 0;
+}
+
+
+
+  @media (max-width: 450px) {
+
+body{
+    overflow-x:hidden;
+}
+
+#navBar{
+    height: auto;
+    padding: 10px 0;
+    justify-content: space-between;
+    height: 10vw;
+}
+
+.logo{
+    margin-right: 20vw;
+
+}
+
+.navList {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2C2A4A;
+    position: absolute;
+    top: 11vw;
+    right: 0;
+    height: 60vw;
+    width: 25vw;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in;
+    display: none;
+
+  }
+
+.navList.active{
+    transform: translateX(0);
+    display: flex;
+    align-items: center;
+  }
+
+  .mobileMenu{    
+    display: block;
+    margin-right: 5vw;
+  }
+
+a {
+    margin: 10px 0;
+    margin: 10px;
+    font-size: 5vw;
+    margin-right: 12vw;
+}
+
+.hero {
+    align-items: center;
+    background-position:bottom;
+    background-size: cover;
+    background-image: url(sunset-8022573_1280.jpg);
+}
+
+.hero{
+    align-items: flex-start
+}
+
+.callActionTitle {
+    margin: 0;
+    padding: 20px;
+    max-width: 90%;
+    justify-content: center;
+    align-items:flex-start;
+    margin-bottom: 15vw;
+    margin-top: 10vw;
+}
+
+.callActionTitle h1 {
+    font-size: 38px;
+    font: bold;
+    color: white;
+}
+
+.callActionTitle h1 span{
+    font-size: 52px;
+    color: #2C2A4A;
+}
+
+.social-icons {
+    width: 40vw;
+    margin-left: 5vw;
+    font-size: 25px;
+    margin-top: 8vw ;
+}
+
+
+.callActionTitle p{
+    font-size:22px;  
+    width: 72vw;
+}
+
+.btnExploreMore{
+    background-color: #2C2A4A;
+    border: 0;
+    margin-top: 5vw;
+    width: 50%;
+}
+
+#navBar{
+    width: 100%;
+}
+
+.promotion{
+    height: 200vw;
+}
+
+.promotion h1{
+ font-size: 30px;
+ width: 90vw;
+}
+
+.promotion p{
+    font-size: 25px;
+    width: 90vw;
+}
+
+.optionsOfPromotion{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    margin-top: 16vw;
+
+}
+
+.options{
+    width: 80vw;
+    border-radius: 20px;
+    height: 15vw;
+    font-size: 34px;
+    margin-bottom: 7vw;
+
+}
+
+
+}   
+@media (min-width: 800px) and ( max-width: 1050px){
+
+.logo{
+    font-size: 30px;
+}
+
+a{
+    font-size: 24px;
+    margin: 1 5px;
+}
+
+#navBar{
+    height: 7vw;
+}
+
+.navList{
+    margin-right:4vw;
+}
+
+.hero{
+align-items: flex-start;
+background-image: url(sunset-8022573_1280.jpg);
+}
+
+.callActionTitle{
+    margin-top: 25vw;
+}
+
+.callActionTitle h1{
+    font-size: 6vw ;
+}
+
+.callActionTitle p{
+    font-size:30px;  
+    width: 52vw;
+}
+
+.btnExploreMore{
+    width: 25vw;
+    height: 8vw;
+    font-size: 25px;
+    background-color: #2C2A4A;
+    border: 0;
+    margin-top: 5vw;
+    }
+
+.social-icons {
+    margin-top:5vw;
+    font-size: 34px;
+    margin-left: 1vw;
+
+}
+
+
+}
+ 
+
