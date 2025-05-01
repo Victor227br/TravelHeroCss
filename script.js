@@ -32,3 +32,17 @@ const mobileNavBar = new MobileNavBar(
 );
 
 mobileNavBar.init();
+
+if ($(window).width() <= 1028) {
+    $('.alignContainer').slick({
+      slidesToShow: 1, // n
+      slidesToScroll: 1,
+      arrows: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+
+    });
+    
+  }

@@ -305,7 +305,7 @@ font-family: 'Anton', sans-serif;
 }
 
 
-  @media (max-width: 680px) {
+  @media (max-width: 780px) {
 
 body{
     overflow-x:hidden;
@@ -450,15 +450,14 @@ a {
     align-items: center;
 
 }
+
 .packOfTravel{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 820vw;
     width: 100%;
-    margin-bottom: 3vw;
- /* flex-wrap: wrap; */
-    margin-bottom: 12vw;
+    margin-bottom: 80vw;
+    margin-top: 0vw;
 }
 
 .alignText{
@@ -468,9 +467,8 @@ a {
 
 }
 .alignContainer{
-    flex-direction: column;
     flex-wrap: nowrap;
-    height: 760vw;
+    height: 50vw;
     width: 80%;
     align-items: center;
     margin: 0;
@@ -478,20 +476,18 @@ a {
 
 .ContainerPack{
     width: 80vw;
-    height: 160vw;
-    margin: 0px;
-
+    margin: 0;
 }
 
 .ContainerPack img{
     width: 80vw;
+    border-radius: 10px;
 }
 
 .styleBtnBuy{
     height: 20vw;
     align-items: center;
    justify-content: center;
-    /* margin-right: 14vw; */
 }
 
 .buyTicket{
@@ -499,9 +495,43 @@ a {
     height: 8vw;
 }
 
+.receiveOurNews{
+    height: 110vw;
+    justify-content: flex-start;
+    margin-top: 90vw;
+}
+
+.singnUpInput{
+    align-items: center;
+    flex-direction: column;
+}
+
+.InputSign{
+    width: 80vw;
+    margin-top: 10vw;
+}
+
+.slick-prev, .slick-next {
+    background: transparent;
+    border: none;
+    font-size: 34px;
+    color: #2C2A4A;
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+  }
+  
+  .slick-prev {
+    left: -38px;
+  }
+  
+  .slick-next {
+    right: -38px;
+  }
+
 
 }   
-@media (min-width: 880px) and ( max-width: 1050px){
+@media (min-width: 820px) and ( max-width: 1050px){
 
 .logo{
     font-size: 30px;
@@ -551,9 +581,178 @@ background-image: url(sunset-8022573_1280.jpg);
     margin-top:5vw;
     font-size: 34px;
     margin-left: 1vw;
+}
+
+.promotion{
+    height: 160vw;
+}
+
+.promotion h1{
+ font-size: 50px;
+ width: 90vw;
+}
+
+.promotion p{
+    font-size: 35px;
+    width: 90vw;
+}
+
+.optionsOfPromotion{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    margin-top: 16vw;
 
 }
 
+.options{
+    width: 80vw;
+    border-radius: 20px;
+    height: 15vw;
+    font-size: 34px;
+    margin-bottom: 7vw;
+
+}
+
+.optionsOfPromotion {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.packOfTravel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 150vw;
+    margin: 0vw;
+}
+
+.alignText{
+    display: flex;
+    justify-content: center;
+    width:80vw;
+    margin-left: 4vw;
+    margin-bottom: 1vw;
+
+}
+
+.alignText h2{
+    font-size: 60px;
+}
+
+.alignText p{
+    font-size: 40px;
+
+}
+
+ .alignContainer{
+    height: 120vw;
+    width: 50vw;
+    margin: 0;
+    align-items: center;
+}
+
+.ContainerPack{
+    margin: 0;
+    margin-bottom: 0vw;
+} 
+
+.ContainerPack img{
+    width: 50vw;
+
+}
+
+.ContainerPack h1{
+ font-size: 50px;
+}
+
+.ContainerPack p{
+    font-size: 24px;
+}
+
+.leaving{
+    font-size: 35px;
+}
+
+.styleBtnBuy{
+    height: 18vw;
+    justify-content: center;
+    align-content: center;
+}
+
+.buyTicket{
+    width: 16vw;
+    font-size: 25px;
+    height: 7vw;
+  }
+
+  
+.price{
+    font-size: 48px;
+    margin: 0;
+}
+
+.receiveOurNews{
+    height: 60vw;
+    justify-content: flex-start;
+}
+
+.singnUpInput{
+    align-items: center;
+    flex-direction: column;
+}
+
+.receiveOurNews h1{
+    font-size: 54px;
+}
+
+.receiveOurNews p{
+    font-size: 40px;
+    margin: 0;
+}
+
+ 
+.slick-slide {
+    min-height: 100%;
+} 
+
+.InputSign{
+    font-size: 40px;
+    width: 80vw;
+    height: 7vw;
+    margin-top:3vw;
+}
+
+.finalInfo h1{
+ font-size: 40px;
+}
+
+.slick-slider, .slick-list, .slick-track {
+    height: 95% ;
+    margin: 0;
+    padding: 0;
+} 
+
+.slick-prev, .slick-next {
+    background: transparent;
+    border: none;
+    font-size: 34px;
+    color:rgb(22, 22, 22);
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+  }
+  
+  .slick-prev {
+    left: -80px;
+  }
+  
+  .slick-next {
+    right: -80px;
+  }
 
 }
  
