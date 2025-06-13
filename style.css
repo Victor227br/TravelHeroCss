@@ -98,6 +98,13 @@ a {
     font-weight: bold;
     border-radius: 5px;
     width: 10vw;
+    cursor: pointer;
+    transition: background 0.5s;;
+    
+}
+
+.btnExploreMore:hover{
+    background-color: #454277;
 }
 
 .social-icons {
@@ -105,9 +112,18 @@ a {
     gap: 30px;
     margin-top: 20px;
     font-size: 22px;
-  }
+}
 
-  .promotion{
+.icons{
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.icons:hover{
+    color: #454277;
+}
+
+.promotion{
     background-color: #2C2A4A;
     color: white;
     display: flex;
@@ -134,7 +150,7 @@ a {
     display: flex;
     justify-content: space-around;
     width: 90%;
- margin-top: 2vw;
+    margin-top: 2vw;
 }
 
 .options{
@@ -149,29 +165,35 @@ a {
     font: bold;
     font-family: 'Anton', sans-serif;
     font-weight: 400;
+    transition: background color 0.5s;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.options:hover{
+    background-color: #454277;
+    color: white;
+    transform: scale(1.1);
+
 }
 
 .packOfTravel{
-    background-color: 	#F5F5F5;
-
+    background-color: #1e1a2e;
 }
 
 .alignText{
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: #2C2A4A;
-    /* margin-top: 5vw; */
+    color:white;
     margin-bottom: 2vw;
-
-
 }
 
 .alignText h2{
     margin-top: 4vw;
-font-size: 30px;
-font: bold;
-font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    font: bold;
+    font-family: 'Anton', sans-serif;
 }
 
 .alignText p{
@@ -199,7 +221,14 @@ font-family: 'Anton', sans-serif;
     background-color: #2C2A4A;
     color: #F5F5F5;   
     margin-bottom: 5vw;
+    transition: transform 0.3s ease-in-out;
 }
+
+
+.ContainerPack:hover{
+    transform: scale(1.1);
+}
+
 
 .alignTextContainer{
  margin-left:10px ;
@@ -248,6 +277,7 @@ font-family: 'Anton', sans-serif;
  font: bold;
  margin-right: 2vw;
  margin-top: 8px;
+ cursor:pointer;
 }
 
 .price{
@@ -300,12 +330,11 @@ font-family: 'Anton', sans-serif;
     margin: 12px;
 }
 
-.finalInfo h1{
+.aboutUs {
     margin: 0;
 }
 
-
-  @media (max-width: 780px) {
+ @media (max-width: 780px) {
 
 body{
     overflow-x:hidden;
