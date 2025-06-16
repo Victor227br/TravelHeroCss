@@ -10,7 +10,7 @@ h1 h2{
     font-weight: 700;
 }
 
-#navBar{
+.navBar{
     display: flex;
     align-items: center;
     width: 100%;
@@ -101,7 +101,7 @@ a {
 @keyframes hasShown{
     from{
     opacity: 0;
-    transform:translateX(-50px);
+    transform:translateX(-55px);
     }
 to{
 opacity: 1;
@@ -250,6 +250,8 @@ transform: none;
     width: 100%;
     gap: 20px;
     height: 90%;
+    opacity: 0;
+    animation: animationScroll 1s;
     /* margin: 20px; */
 }
 
@@ -263,40 +265,15 @@ transform: none;
     background-color: #2C2A4A;
     color: #F5F5F5;   
     margin-bottom: 5vw;
-    animation: animationPack 1ns ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 50%;
+    animation: animationScroll 2s;
     transition: transform 0.3s ease-in-out;
-    opacity: 0;
-}
-
-
-.ContainerPack:hover{
-    transform: scale(1.1);
-}
-
-@keyframes animationPack{
-    from{
-        opacity: 0;
-        transform: translateY(50px);
-
-    }
-    to{
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.animationPack{
-    animation: animationPack 1s forwards;
 }
 
 @keyframes animationScroll{
-    from{
+    form{
         opacity: 0;
-        translate: 0 30vw;
+        translate: 100vw 0;
     }
-
     to{
         opacity: 1;
         translate: 0 0;
@@ -304,18 +281,15 @@ transform: none;
     }
 }
 
-@keyframes scroll{
-    from{
-        scale: 0 1;
-
-    }
-    to{
-        scale: 1 1;
-
-    }
+.animationScroll{
+    animation: animationScroll 2s forwards;
 }
 
-.ContainerPack
+
+.ContainerPack:hover{
+    transform: scale(1.1);
+}
+
 
 .alignTextContainer{
  margin-left:10px ;
@@ -352,6 +326,11 @@ transform: none;
    align-items: center;
    border-top: 1px solid white;
     /* margin-right: 14vw; */
+}
+
+.styleBtnBuy a{
+    margin: 0;
+    padding: 0;
 }
 
 .buyTicket{

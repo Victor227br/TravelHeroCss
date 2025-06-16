@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+
+.navBarCheckout{
+    display: flex;
+    justify-content: center;
+    color: #454277;
+    background-color:#F8F9FA;
+    height: 4vw;
+    font-size: 24px;
+    align-items: center;
+}
+
+.alignContainerCheckout{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+.containerPersonalData{
+    display: flex;
+    height: 40vw;
+    border-top: #454277 1vw solid;
+    width: 30vw;
+    background-color: #F8F9FA;
+}
+
+.containerPersonalData {
+    color: #454277;
+}
+
+.stylePersonalDataH2{
+    width: 20vw;
+    height: 1vw;
+    border-bottom:#333333 2vw solid;
+    color: #454277;
+}
