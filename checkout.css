@@ -21,21 +21,84 @@ body{
     margin-bottom: 1vw;
 }
 
-.containerPersonalData{
+.containerCheckout{
     display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     height: 40vw;
     border-top: #454277 1vw solid;
     width: 30vw;
     background-color: #F8F9FA;
 }
 
-.containerPersonalData {
+.personalData{
     color: #454277;
 }
 
 .stylePersonalDataH2{
-    width: 20vw;
-    height: 1vw;
-    border-bottom:#333333 2vw solid;
+    margin: 1vw;
     color: #454277;
+}
+
+.containerInputs{
+    display: flex;
+    justify-content: space-around;
+    background-color:#ffff;
+    border: #454277 2px solid;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    width: 26vw;
+    height: 32vw;
+    margin-bottom: 2vw;
+    flex-wrap: wrap;
+    margin-top: 0;
+
+
+}
+
+.information{
+    margin-bottom:5vw ;
+    width: 22vw;
+    margin: 2vw;
+    height: 1vw;
+    color: #333333;
+}
+
+.inputAlign{
+    display: flex;
+    margin-top: 0;
+    align-items: flex-start;
+    justify-content:space-around;
+    height: 26vw;
+    flex-wrap: wrap;
+}
+
+.inputText{
+    height: 3vw;
+    width: 22vw;
+    font-size: 15px;
+    border: 000;
+    border-bottom:#454277 2px solid;
+    color: #333333;
+}
+
+.inputNumber{
+    height: 2vw;
+    width: 10vw;
+    border: 000;
+    border-bottom: #454277 2px solid;
+    color: #333333;
+}
+
+.register{
+    width: 17vw;
+    height: 3vw;
+    background-color: #454277;
+    color: #F8F9FA;
+    border: 00000;
+    font: bold;
+
+    font-size: 25px;
+    border-radius: 5px;
 }
