@@ -204,3 +204,85 @@ body{
 .buy:hover {
     background-color: #5b59a4;
 }
+
+
+
+@media (max-width: 768px) {
+    .alignContainerCheckout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerCheckout, .containerResume, .containerPayment {
+        width: 80vw;
+        height: auto;
+    }
+
+    .containerInputs, .containerResumeInside, .containerInputsPayment {
+        width: 70vw;
+        height: auto;
+    }
+
+    .inputText, .inputTextPayment {
+        width: 60vw;
+        height: 5vw;
+        font-size: 3vw;
+    }
+
+    .inputNumber {
+        width: 28vw;
+        height: 4vw;
+    }
+
+    .buy {
+        font-size: 3vw;
+        padding: 1.5vw 4vw;
+    }
+
+    .imgCredit img {
+        width: 8vw;
+    }
+
+    .navBarCheckout {
+        height: 8vw;
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerCheckout, .containerResume, .containerPayment {
+        margin: 10vw;
+        width: 90vw;
+    }
+
+    .containerInputs, .containerResumeInside, .containerInputsPayment {
+        width: 85vw;
+        height: 80vw;
+    }
+
+
+    .inputText, .inputTextPayment {
+        width: 80vw;
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+    .inputNumber {
+        width: 38vw;
+        height: 8vw;
+    }
+
+    .buy {
+        font-size: 4vw;
+        padding: 2vw 6vw;
+    }
+
+    .imgCredit img {
+        width: 10vw;
+    }
+
+    .navBarCheckout {
+        height: 10vw;
+        font-size: 6vw;
+    }
+}
