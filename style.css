@@ -10,7 +10,7 @@ h1 h2{
     font-weight: 700;
 }
 
-.navBar{
+.header{
     display: flex;
     align-items: center;
     width: 100%;
@@ -21,7 +21,7 @@ h1 h2{
     font-size: 15px;
 }
 
-.navList{
+.header__list{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -30,7 +30,7 @@ h1 h2{
     width: 83%;
 }
 
-@keyframes animationNavList{
+@keyframes header__animation-list{
     from{
     opacity: 0;
     transform: translateX(50px);
@@ -42,8 +42,8 @@ h1 h2{
     }
 }
 
-.animationNavList{
-    animation: animationNavList 2s forwards;
+.header__animation-list{
+    animation: header__animation-list 2s forwards;
 }
 
 li{
@@ -56,19 +56,19 @@ a {
     margin: 7px;
 }
 
-.mobileMenu{
+.header__mobile-menu{
     cursor: pointer;
     display: none;
 }
 
-.mobileMenu div{
+.header__mobile-menu div{
     width: 32px;
     height: 2px;
     background-color: #fff;
     margin: 8px;
 }
 
-.logo{
+.header__logo{
     margin-left: 6vw;
     font-weight: bold;
     opacity: 0;
@@ -85,7 +85,7 @@ a {
     height: 100vh ;
 }
 
-.callActionTitle{
+.hero--align{
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -93,7 +93,7 @@ a {
     margin-left:6vw;
 }
 
-.callActionTitle h1{
+.hero--align h1{
     font-size: 48px;    
     margin-bottom: 16px;
 }
@@ -113,7 +113,7 @@ transform: none;
     animation: hasShown 2s forwards;
 }
 
-.callActionTitle h1 span{
+.hero--align h1 span{
     color:  #454277;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -121,13 +121,13 @@ transform: none;
 }
 
 
-.callActionTitle p{
+.hero--align p{
     font-size:26px;  
     width: 36vw;
     opacity: 0;
 }
 
-.btnExploreMore{
+.hero__button--call-to-action{
     background-color: transparent;
     border: 2px solid #454277;
     color: white;
@@ -142,11 +142,11 @@ transform: none;
     
 }
 
-.btnExploreMore:hover{
+.hero__button--call-to-action:hover{
     background-color: #454277;
 }
 
-.social-icons {
+p {
     display: flex;
     gap: 30px;
     margin-top: 20px;
@@ -186,14 +186,14 @@ transform: none;
 
 }
 
-.optionsOfPromotion{
+.promotion__options{
     display: flex;
     justify-content: space-around;
     width: 90%;
     margin-top: 2vw;
 }
 
-.options{
+.promotion__buttons--options{
     width: 15vw;
     border-radius: 30px;
     height: 3vw;
@@ -210,18 +210,18 @@ transform: none;
     cursor: pointer;
 }
 
-.options:hover{
+.promotion__buttons--options:hover{
     background-color: #454277;
     color: white;
     transform: scale(1.1);
 
 }
 
-.packOfTravel{
+.pack-travel{
     background-color: #1e1a2e;
 }
 
-.alignText{
+.pack-travel__text--align{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -229,18 +229,17 @@ transform: none;
     margin-bottom: 2vw;
 }
 
-.alignText h2{
+.pack-travel__text--align h2{
     margin-top: 4vw;
     font-size: 30px;
     font: bold;
     font-family: 'Anton', sans-serif;
 }
 
-.alignText p{
+.pack-travel__text--align p{
  font-size: 18px;
 }
-
-.alignContainer{
+.tickets-block{
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
@@ -254,7 +253,7 @@ transform: none;
 }
 
 
-.ContainerPack{
+.tickets-block__pack{
     margin: 40px;
     width: 22vw;
     height: 34vw;
@@ -284,23 +283,23 @@ transform: none;
 }
 
 
-.ContainerPack:hover{
+.tickets-block__pack:hover{
     transform: scale(1.1);
 }
 
 
-.alignTextContainer{
+.pack-travel__text--alignContainer{
  margin-left:10px ;
 }
 
-.ContainerPack img{
+.tickets-block__pack img{
     width: 22vw;
     margin-bottom: 3px;
     border-radius:  10px; ;
 }
 
 
-.ContainerPack h1{
+.tickets-block__pack h1{
     font-size: 24px;
     /* margin-bottom: 5px; */
     font: bold;
@@ -312,7 +311,7 @@ transform: none;
     font: bold;
 }
 
-.ContainerPack p{
+.tickets-block__pack p{
     color: #b6b4b4;
 }
 
@@ -404,19 +403,19 @@ body{
     overflow-x:hidden;
 }
 
-#navBar{
+#header{
     height: auto;
     padding: 10px 0;
     justify-content: space-between;
     height: 10vw;
 }
 
-.logo{
+.header__logo{
     margin-right: 20vw;
 
 }
 
-.navList {
+.header__list {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -432,13 +431,13 @@ body{
 
   }
 
-.navList.active{
+.header__list.active{
     transform: translateX(0);
     display: flex;
     align-items: center;
   }
 
-  .mobileMenu{    
+  .header__mobile-menu{    
     display: block;
     margin-right: 5vw;
   }
@@ -461,7 +460,7 @@ a {
     align-items: flex-start
 }
 
-.callActionTitle {
+.hero--align {
     margin: 0;
     padding: 20px;
     max-width: 90%;
@@ -471,18 +470,18 @@ a {
     margin-top: 10vw;
 }
 
-.callActionTitle h1 {
+.hero--align h1 {
     font-size: 38px;
     font: bold;
     color: white;
 }
 
-.callActionTitle h1 span{
+.hero--align h1 span{
     font-size: 53px;
     color: #2C2A4A;
 }
 
-.social-icons {
+.hero__social-icons {
     width: 40vw;
     margin-left: 5vw;
     font-size: 25px;
@@ -490,19 +489,19 @@ a {
 }
 
 
-.callActionTitle p{
+.hero--align p{
     font-size:22px;  
     width: 72vw;
 }
 
-.btnExploreMore{
+.hero__button--call-to-action{
     background-color: #2C2A4A;
     border: 0;
     margin-top: 5vw;
     width: 50%;
 }
 
-#navBar{
+#header{
     width: 100%;
 }
 
@@ -520,7 +519,7 @@ a {
     width: 90vw;
 }
 
-.optionsOfPromotion{
+.promotion__options{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -529,7 +528,7 @@ a {
 
 }
 
-.options{
+.promotion__buttons--options{
     width: 80vw;
     border-radius: 20px;
     height: 15vw;
@@ -538,13 +537,13 @@ a {
 
 }
 
-.optionsOfPromotion {
+.promotion__options {
     flex-direction: column;
     align-items: center;
 
 }
 
-.packOfTravel{
+.pack-travel{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -553,13 +552,13 @@ a {
     margin-top: 0vw;
 }
 
-.alignText{
+.pack-travel__text--align{
     width:90vw;
     margin-left: 4vw;
     margin-bottom: 1vw;
 
 }
-.alignContainer{
+.tickets-block{
     flex-wrap: nowrap;
     height: 50vw;
     width: 80%;
@@ -567,12 +566,12 @@ a {
     margin: 0;
 }
 
-.ContainerPack{
+.tickets-block__pack{
     width: 80vw;
     margin: 0;
 }
 
-.ContainerPack img{
+.tickets-block__pack img{
     width: 80vw;
     border-radius: 10px;
 }
@@ -626,7 +625,7 @@ a {
 }   
 @media (min-width: 820px) and ( max-width: 1050px){
 
-.logo{
+.header__logo{
     font-size: 30px;
 }
 
@@ -635,11 +634,11 @@ a{
     margin: 1 5px;
 }
 
-#navBar{
+#header{
     height: 7vw;
 }
 
-.navList{
+.header__list{
     margin-right:4vw;
 }
 
@@ -648,20 +647,20 @@ align-items: flex-start;
 background-image: url(sunset-8022573_1280.jpg);
 }
 
-.callActionTitle{
+.hero--align{
     margin-top: 25vw;
 }
 
-.callActionTitle h1{
+.hero--align h1{
     font-size: 6vw ;
 }
 
-.callActionTitle p{
+.hero--align p{
     font-size:30px;  
     width: 52vw;
 }
 
-.btnExploreMore{
+.hero__button--call-to-action{
     width: 25vw;
     height: 8vw;
     font-size: 25px;
@@ -670,7 +669,7 @@ background-image: url(sunset-8022573_1280.jpg);
     margin-top: 5vw;
     }
 
-.social-icons {
+.hero__social-icons {
     margin-top:5vw;
     font-size: 34px;
     margin-left: 1vw;
@@ -690,7 +689,7 @@ background-image: url(sunset-8022573_1280.jpg);
     width: 90vw;
 }
 
-.optionsOfPromotion{
+.promotion__options{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -699,7 +698,7 @@ background-image: url(sunset-8022573_1280.jpg);
 
 }
 
-.options{
+.promotion__buttons--options{
     width: 80vw;
     border-radius: 20px;
     height: 15vw;
@@ -708,13 +707,13 @@ background-image: url(sunset-8022573_1280.jpg);
 
 }
 
-.optionsOfPromotion {
+.promotion__options {
     flex-direction: column;
     align-items: center;
 
 }
 
-.packOfTravel{
+.pack-travel{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -723,7 +722,7 @@ background-image: url(sunset-8022573_1280.jpg);
     margin: 0vw;
 }
 
-.alignText{
+.pack-travel__text--align{
     display: flex;
     justify-content: center;
     width:80vw;
@@ -732,37 +731,37 @@ background-image: url(sunset-8022573_1280.jpg);
 
 }
 
-.alignText h2{
+.pack-travel__text--align h2{
     font-size: 60px;
 }
 
-.alignText p{
+.pack-travel__text--align p{
     font-size: 40px;
 
 }
 
- .alignContainer{
+.tickets-block{
     height: 120vw;
     width: 50vw;
     margin: 0;
     align-items: center;
 }
 
-.ContainerPack{
+.tickets-block__pack{
     margin: 0;
     margin-bottom: 0vw;
 } 
 
-.ContainerPack img{
+.tickets-block__pack img{
     width: 50vw;
 
 }
 
-.ContainerPack h1{
+.tickets-block__pack h1{
  font-size: 50px;
 }
 
-.ContainerPack p{
+.tickets-block__pack p{
     font-size: 24px;
 }
 

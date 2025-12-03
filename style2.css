@@ -1,0 +1,390 @@
+body{
+    padding: 0;
+    margin: 0;
+     background-color: #1e1a2e;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+button{
+    border: 0000;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+    height: 78px;
+    background-color: #2C2A4A;
+}
+
+.header--align{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 14px ;
+    margin-left: 14px ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__mobile-menu{
+    cursor: pointer;
+}
+
+.header__line{
+    width: 32px;
+    margin: 6px;
+    height: 2px;
+    background-color: white;
+}
+
+.header__list{
+    display: none;
+    list-style: none;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.header__list a{
+    color: white;
+    text-decoration: none;    
+}
+
+.hero{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: white;
+    background-image: url(sunset-8022573_1280.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero__itens--align{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top:18%;
+}
+
+.hero__itens--align h1{
+    font-size: 38px;
+    margin-bottom: 26px;
+}
+
+.hero__itens--align h1 span{
+    color: #2C2A4A;
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.hero__itens--align p{
+    font-size: 23px;
+    width: 80%;
+}
+
+.hero__button--call-to-action{
+    background-color: #2C2A4A;
+    color: white;
+    height: 44px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 45%;
+    cursor: pointer;
+}
+
+.hero__social-icons{
+    display: flex;
+    margin-left: 5px;
+    gap: 34px;
+    margin-top: 22px;
+    font-size: 26px;
+}
+
+.promotion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2C2A4A;
+    color: white;
+}
+
+.promotion__container{
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+}
+
+.promotion h1{
+    margin-top: 4.5%; 
+    font-size: 26px;
+    font: bold
+}
+
+.promotion p{
+    font-size: 22px;
+}
+
+.promotion__options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+    margin-top: 24px;
+    margin-bottom: 55px;
+}
+
+.promotion__buttons--options{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px ;
+    color: #454277;
+    height: 48px;
+    font-size: 22px;
+    font: bold;
+    transition: background color 0.5s;
+    cursor: pointer;
+}
+
+.promotion__buttons--options:active{
+    background-color: #454277;
+    color: white;
+}
+
+.pack-travel__text--align{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+}
+
+.pack-travel__text--align h2{
+    margin-top: 20px;
+    font-size: 26px;
+    font: bold;
+}
+
+.pack-travel__text--align p{
+    font-size: 22px;
+    margin-bottom: 10%;
+}
+
+.block-tickets{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-top: 10%;
+    gap: 20px;
+}
+
+.block-tickets__pack{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    width: 88%;
+    background-color: #2C2A4A;
+    color: white;
+}
+
+.block-tickets__pack img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.block-tickets__pack--align{
+    margin: 0;
+    margin-left: 4%;
+}
+
+.block-tickets__destination{
+    font-size: 26px;
+}
+
+.block-tickets__leaving{
+    font-size: 22px;
+}
+
+.block-tickets__pack p{
+    font-size: 20px;
+}
+
+.block-tickets__content-final{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row ;
+    height: auto;
+    margin-right: 6%;
+    margin-bottom: 4%;
+}
+
+.block-tickets__price{
+    font-size: 22px;
+}
+
+.block-tickets__button--buy-ticket{
+    margin-right: 6%;
+    border-radius: 5px;
+    height: 35px;
+    color: #454277;
+    font-size: 18px;
+    width: 40%;
+
+}
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    margin-top: 20%;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2C2A4A;
+    color: white;
+}
+
+.newsletter__title{
+    font-size: 26px ;
+    font: bold;
+    margin: 8px;
+}
+
+.newsletter__text{
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+
+.newsletter__register{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+}
+
+.newsletter__input{
+    width: 92%;
+    font-size: 20px;
+    height: 45px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0000;
+}
+
+
+@media (min-width: 750px){
+
+.header{
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.header--align{
+    align-items: center;
+    margin-left: 5% ;
+    margin-right: 5%;
+}
+
+.header__logo{
+    font-size: 31px;
+}
+
+.header__line{
+    width: 54px;
+    height: 2px;
+    margin: 10px;
+    background-color: white;
+}
+
+.hero__itens--align{
+    margin-top:8%;
+    margin-left: 9%;
+}
+
+.hero__itens--align h1{
+    width: 100%;
+    font-size: 56px;
+}
+
+.hero__itens--align h1 span{
+    font-size: 64px;
+}
+
+.hero__itens--align p{
+    width: 100%;
+    font-size: 46px;
+}
+
+.hero__button--call-to-action{
+    height: 62px;
+    font-size: 30px;
+}
+
+.hero__social-icons{
+    gap: 60px;
+    margin-top: 7%;
+    font-size: 40px;
+}
+
+
+.promotion h1{
+    margin-top: 4.5%; 
+    font-size: 39px;
+    font: bold
+}
+
+
+.promotion p{
+    font-size: 33px;
+}
+
+.promotion__options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 24px;
+    margin-top: 10%;
+    margin-bottom: 55px;
+}
+
+.promotion__buttons--options{
+    height: 68px;
+    font-size: 32px;
+}
+
+.pack-travel__text--align h2{
+    margin: 0;
+    margin-top: 8%;
+    font-size: 39px;
+}
+
+.pack-travel__text--align p{
+    font-size: 33px;
+    margin-bottom: 10%;
+}
+
+
+
+}
+

@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-      <script
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script
   src="https://code.jquery.com/jquery-3.7.1.js"
   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"></script>
-    
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-      
-
-<title>TravelCompany</title>
+  crossorigin="anonymous"></script>  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <title>TravelCompany</title>
     
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
-
     <body>
-    <nav class="navBar">
-      <h2 class="logo hasShown" style="animation-duration: 850ms;">Travel</h2>
-      <div class="mobileMenu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
+    <header class="header">
 
-        <ul class="navList">
-          <li class="animationNavList" style="animation-delay: 200ms;"><a href="#">Home</a></li>
-          <li class="animationNavList" style="animation-delay: 400ms;" ><a href="#">About</a></li>
-          <li class="animationNavList" style="animation-delay: 600ms;" ><a href="#">Services</a></li>
-          <li class="animationNavList" style="animation-delay: 800ms;" ><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="header--align">
+      <h2 class="header__logo hasShown" style="animation-duration: 850ms;">Travel</h2>
+      <ul class="header__list">
+        <li class="header__animation-list" style="animation-delay: 200ms;"><a href="#">Home</a></li>
+        <li class="header__animation-list" style="animation-delay: 400ms;" ><a href="#">About</a></li>
+        <li class="header__animation-list" style="animation-delay: 600ms;" ><a href="#">Services</a></li>
+        <li class="header__animation-list" style="animation-delay: 800ms;" ><a href="#">Contact</a></li>
+      </ul>
+
+    <div class="header__mobile-menu">
+        <div class="header__line"></div>
+        <div class="header__line"></div>
+        <div class="header__line"></div>
+    </div>
+
+</div>  
+</header>
 
     <section class="hero">
-      <div class="callActionTitle">
-        <h1 class="hasShown">Tour Your Dream Destination with <span class="hasShown">Travel.</span></h1>
+      <div class="hero__itens--align">
+          <h1 class="hasShown">Tour Your Dream Destination with <span class="hasShown">Travel.</span></h1>
         <p class="hasShown" style="animation-delay: 240ms;"> Escape the ordinary and embrace the journey that defines you.</p>
-        <button class="btnExploreMore hasShown" style="animation-duration: 1s;">Explore More</button>
-        <div class="social-icons">
+        <button class="hero__button--call-to-action hasShown" style="animation-duration: 1s;">Explore More</button>
+        <div class="hero__social-icons">
           <i class="fab fa-facebook icons hasShown" style="animation-duration: 1,6s;"></i>
           <i class="fab fa-twitter icons hasShown" style="animation-duration: 1,3s;"></i>
           <i class="fab fa-pinterest icons hasShown" style="animation-duration:1,3s;" ></i>
@@ -53,137 +53,55 @@
     </section>
 
     <section class="promotion">
+      <div class="promotion__container">
       <h1>Enjoy big savings! Shop our seasonal sale and save up to 50%</h1>
       <p>take advantage of the offer and buy now</p>
-      <div class="optionsOfPromotion">
-          <button class="options">Pack of Travel</button>
-          <button class="options">Summer Vacation</button>
-          <button class="options">Airline tickets</button>
-          <button class="options">Super Offers</button>
-          <button class="options">Hosting</button>
+      <div class="promotion__options">
+          <button class="promotion__buttons--options">Pack of Travel</button>
+          <button class="promotion__buttons--options">Summer Vacation</button>
+          <button class="promotion__buttons--options">Airline tickets</button>
+          <button class="promotion__buttons--options">Super Offers</button>
+          <button class="promotion__buttons--options">Hosting</button>
       </div>
+    </div>
     </section>
 
-    <section class="packOfTravel">
-      <div class="alignText">
-        <h2>Travel packages for you to enjoy the summer!</h2>
-        <p>Unmissable conditions to save even more on an unforgettable experience</p>
-      </div>
+  <section class="pack-travel">
+    <div class="pack-travel__text--align">
+      <h2>Travel packages for you to enjoy the summer!</h2>
+      <p>Unmissable conditions to save even more on an unforgettable experience</p>
+    </div>
+  </section>
 
- <section class="alignContainer animationScroll">
-
-      <div class="ContainerPack animationScroll ">
+ <section class="block-tickets animationScroll">
+  <div class="block-tickets__pack animationScroll ">
      <img src="santos.jpg" alt="">
-        <div class="alignTextContainer">
-        <h1>Santos</h1>
-        <h2 class="leaving">Leaving sao paulo</h2>
-        <p>round trip</p>
+      <div class="block-tickets__pack--align">
+        <h1 class="block-tickets__destination">Santos</h1>
+        <h2 class="block-tickets__leaving">Leaving sao paulo</h2>
+        <p class="block-tickets__way">round trip</p>
         <p>Hosting all inclusive</p>
-        <p>exit 08:00 Am</p>
-        <h2 class="price">Price: 300$</h2>
-        <div class="styleBtnBuy">
-          <a href="checkout.html" target="_blank"><button class="buyTicket">Buy Ticket</button></a>  
+        <p class="block-tickets__exit">exit 08:00 Am</p>
+        <div class="block-tickets__content-final">
+          <h2 class="block-tickets__price">Price: 300$</h2>
+          <button class="block-tickets__button--buy-ticket">Buy Ticket</button> 
         </div>
       </div>
     </div>
-
-    <div class="ContainerPack  animationScroll">
-  <img src="santos.jpg" alt="">
-      <div class="alignTextContainer">
-      <h1>Santos</h1>
-      <h2 class="leaving">Leaving sao paulo</h2>
-      <p>round trip</p>
-      <p>Hosting all inclusive</p>
-      <p>exit 08:00 Am</p>
-      <h2 class="price">Price: 300$</h2>
-      <div class="styleBtnBuy">
-        <a href="checkout.html" target="_blank"><button class="buyTicket">Buy Ticket</button></a>
-      </div>
-    </div>
-  </div>
-  <div class="ContainerPack animationScroll">
-<img src="santos.jpg" alt="">
-    <div class="alignTextContainer">
-    <h1>Santos</h1>
-    <h2 class="leaving">Leaving sao paulo</h2>
-    <p>round trip</p>
-    <p>Hosting all inclusive</p>
-    <p>exit 08:00 Am</p>
-    <h2 class="price">Price: 300$</h2>
-    <div class="styleBtnBuy">
-    <a href="checkout.html" target="_blank"><button class="buyTicket">Buy Ticket</button></a>
-    </div>
-  </div>
-</div>
-
-<div class="ContainerPack  animationScroll scro">
-  <img src="santos.jpg" alt="">
-  <div class="alignTextContainer">
-  <h1>Santos</h1>
-  <h2 class="leaving">Leaving sao paulo</h2>
-  <p>round trip</p>
-  <p>Hosting all inclusive</p>
-  <p>exit 08:00 Am</p>
-  <h2 class="price">Price: 300$</h2>
-  <div class="styleBtnBuy">
-    <a href="checkout.html" target="_blank"><button class="buyTicket">Buy Ticket</button></a>  
-  </div>
-</div>
-</div>
-
-<div class="ContainerPack  animationScroll scro">
-  <img src="santos.jpg" alt="">
-  <div class="alignTextContainer">
-  <h1>Santos</h1>
-  <h2 class="leaving">Leaving sao paulo</h2>
-  <p>round trip</p>
-  <p>Hosting all inclusive</p>
-  <p>exit 08:00 Am</p>
-  <h2 class="price">Price: 300$</h2>
-  <div class="styleBtnBuy">
-    <a href="checkout.html" target="_blank"><button class="buyTicket">Buy Ticket</button></a>  
-  </div>
-</div>
-</div>
-
-<div class="ContainerPack  animationScroll scro">
-  <img src="santos.jpg" alt="">
-  <div class="alignTextContainer">
-  <h1>Santos</h1>
-  <h2 class="leaving">Leaving sao paulo</h2>
-  <p>round trip</p>
-  <p>Hosting all inclusive</p>
-  <p>exit 08:00 Am</p>
-  <h2 class="price">Price: 300$</h2>
-  <div class="styleBtnBuy">
-    <a href="checkout.html" target="_blank"><button class="buyTicket">Buy Ticket</button></a>
-  </div>
-</div>
-</div>
-
 </section>
-    </section>
 
-    <section class="receiveOurNews">
-      <h1>Receive our news</h1>
-      <p>Sign up and receive the best offers</p>
+    <section class="newsletter">
+      <h1 class="newsletter__title">Receive our news</h1>
+      <p class="newsletter__text">Sign up and receive the best offers</p>
 
-      <div class="singnUpInput">
-        <input class="InputSign" type="text"  placeholder="Your Name">  
-        <input class="InputSign" type="text"  placeholder="Your Email">
-        <input class="InputSign" type="number"  placeholder="Your Phone Number">
+      <div class="newsletter__register">
+        <input class="newsletter__input" type="text"  placeholder="Your Name">  
+        <input class="newsletter__input" type="text"  placeholder="Your Email">
+        <input class="newsletter__input" type="number"  placeholder="Your Phone Number">
       </div>
     </section>
 
-    <section class="aboutUs">
-      <div class="containerStart">
-        
-      </div>
-    
-
-    </section>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <script src="script.js"></script>
   </head>
   </body>

@@ -272,6 +272,10 @@ body{
         height: 8vw;
     }
 
+    .containerResumeInside{
+        font-size: 12px
+    };
+
     .buy {
         font-size: 4vw;
         padding: 2vw 6vw;
