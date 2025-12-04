@@ -217,6 +217,7 @@ button{
 }
 
 .block-tickets__leaving{
+    margin-bottom: 0;
     font-size: 22px;
 }
 
@@ -230,12 +231,14 @@ button{
     justify-content: space-between;
     flex-direction: row ;
     height: auto;
+    margin-top: 0;
     margin-right: 6%;
     margin-bottom: 4%;
 }
 
 .block-tickets__price{
-    font-size: 22px;
+    margin: 0;
+    font-size: 23px;
 }
 
 .block-tickets__button--buy-ticket{
@@ -245,7 +248,6 @@ button{
     color: #454277;
     font-size: 18px;
     width: 40%;
-
 }
 
 .newsletter{
@@ -318,7 +320,7 @@ button{
 
 .hero__itens--align{
     margin-top:8%;
-    margin-left: 9%;
+    margin-left: 6%;
 }
 
 .hero__itens--align h1{
@@ -379,10 +381,74 @@ button{
 
 .pack-travel__text--align p{
     font-size: 33px;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
 }
 
+.block-tickets{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    justify-content: space-aroud;
+    flex-wrap: wrap;
+}
 
+.block-tickets__pack{
+    margin-bottom: 4%;
+    width: 44%;
+}
+
+.block-tickets__pack--align{
+    font-size: 24px;
+}
+
+.block-tickets__leaving{
+    font-size: 25px;
+}
+
+.block-tickets__destination{
+    font-size: 28px;
+}
+
+.block-tickets__price{
+    font-size: 27px;
+}
+
+.block-tickets__button--buy-ticket{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 23px;
+    height: 40px;
+}
+
+.block-tickets__content-final{
+    margin-bottom: 10%;
+    margin-right: 2% ;
+}
+
+.newsletter{
+    margin-top:5%;
+}
+
+.newsletter__title{
+    margin: 0;
+    font-size: 39px;
+    margin-top: 4%;
+}
+
+.newsletter__text{
+    margin-bottom: 4%;
+}
+
+.newsletter__register{
+    font-size: 33px;
+    margin-bottom: 5%;
+}
+
+.newsletter__input{
+    font-size: 28px;
+    height: 50px;
+}
 
 }
 
