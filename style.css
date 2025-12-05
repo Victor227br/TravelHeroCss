@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-     background-color: #1e1a2e;
+    background-color: rgb(247, 243, 255);
     font-family: 'Playfair Display', serif;
 }
 
@@ -14,6 +14,21 @@ button{
     border: 0000;
 }
 
+/* @keyframes hasShown{
+    from{
+    opacity: 0;
+    transform:translateX(-50px);
+    }
+to{
+opacity: 1;
+transform: none;
+    }
+}
+
+.hasShown{
+    animation: hasShown 2s forwards;
+} */
+
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +36,18 @@ button{
     color: white;
     height: 78px;
     background-color: #2C2A4A;
+}
+
+.header__logo-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.header__icon{
+    height: 26px;
 }
 
 .header--align{
@@ -85,7 +112,7 @@ button{
 }
 
 .hero__itens--align h1 span{
-    color: #2C2A4A;
+    color: #454277;
     font-weight: 700;
     font-size: 44px;
 }
@@ -117,6 +144,7 @@ button{
 .promotion{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: #2C2A4A;
     color: white;
@@ -144,13 +172,17 @@ button{
     justify-content: space-around;
     gap: 24px;
     margin-top: 24px;
-    margin-bottom: 55px;
+    margin-bottom: 10px;
 }
 
 .promotion__buttons--options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     background-color: white;
-    border-radius: 5px ;
+    border-radius: 18px ;
     color: #454277;
     height: 48px;
     font-size: 22px;
@@ -168,38 +200,73 @@ button{
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: #2C2A4A;
     margin-left: 4.5%;
     margin-right: 4.5%;
 }
 
+
 .pack-travel__text--align h2{
-    margin-top: 20px;
+    margin-top: 2px;
     font-size: 26px;
     font: bold;
 }
 
 .pack-travel__text--align p{
     font-size: 22px;
-    margin-bottom: 10%;
+    margin-bottom: 4%;
 }
 
 .block-tickets{
     display: flex;
     flex-wrap: wrap; 
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
     gap: 20px;
+}
+
+.block-tickets__dynamic-offers{
+  display: none;
+}
+
+.block-tickets__slider{
+    margin: 0;
+    padding: 0;
+}
+
+.block-tickets__content-pack{
+    width: 100%;
+}
+
+.icon-suitcase{
+    margin: 0;
+}
+
+.block-tickets__slider{
+    width: 90%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.block-tickets__content-pack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .block-tickets__pack{
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     width: 88%;
-    background-color: #2C2A4A;
-    color: white;
+    background-color: white;
+    color: #454277;
 }
 
 .block-tickets__pack img{
@@ -233,13 +300,14 @@ button{
     height: auto;
     margin-top: 0;
     margin-right: 6%;
-    margin-bottom: 4%;
+    margin-bottom: 8%;
 }
 
 .block-tickets__price{
     margin: 0;
     font-size: 23px;
 }
+
 
 .block-tickets__button--buy-ticket{
     margin-right: 6%;
@@ -290,6 +358,71 @@ button{
     margin: 10px;
     border-radius: 5px;
     border: 0000;
+}
+
+.slick-prev-custom,.slick-next-custom {
+    display: none;
+}
+
+.footer {
+ background: #454277;
+  margin: 0;
+  height: auto;
+  color: #fff;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer__container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer__logo h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.footer__links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__links ul li {
+  margin: 8px 0;
+}
+
+.footer__links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer__links ul li a:hover {
+  color: #00d8ff;
+}
+
+.footer__icons  {
+    display: flex;
+    margin-right: 10%;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.footer__copy {
+  text-align: center;
+  background-color: #454277;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 20px;
+  padding-bottom:10px ;
+  border-top: 1px solid #283544;
+  font-size: 14px;
+  opacity: 0.7;
 }
 
 
@@ -375,7 +508,7 @@ button{
 
 .pack-travel__text--align h2{
     margin: 0;
-    margin-top: 8%;
+    margin-top: 5%;
     font-size: 39px;
 }
 
@@ -422,7 +555,7 @@ button{
 }
 
 .block-tickets__content-final{
-    margin-bottom: 10%;
+    margin-bottom: 13%;
     margin-right: 2% ;
 }
 
@@ -449,6 +582,272 @@ button{
     font-size: 28px;
     height: 50px;
 }
+}
+
+@media (min-width: 1025px){
+
+.header{
+    align-items: center;
+    height: 64px;
+}
+
+.header--align{
+    margin-left: 6%;
+    align-items: center;
+    margin-right: 6%;
+}
+
+.header__mobile-menu{
+    display: none;
+}
+
+.header__list{
+    display: flex;
+    width: 26%;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+.header__logo{
+    font-size: 22px;
+}
+
+.hero{
+    background-image: url(photoherocss.jpg);
+}
+
+.hero__itens--align{
+    margin-top: 7%;
+    width: 42%;
+    margin-bottom: 20%;
+}
+
+.hero__itens--align p{
+    width: 72%;
+    font-size: 27px;
+}
+
+.hero__itens--align h1{
+    font-size: 48px;
+}
+
+.hero__itens--align h1 span{
+    font-size: 48px;
+}
+
+.hero__button--call-to-action{
+    border: #454277 2px solid;
+    background-color: transparent;
+    width: 26%;
+    cursor: pointer;
+    transition: background 0.4s;
+    font-size: 14px;
+    height: 40px;
+}
+
+.hero__button--call-to-action:hover{
+    background-color: #454277;
+}
+
+.hero__social-icons{
+    gap: 6%;
+    margin-top: 4%;
+    font-size: 22px;
+}
+
+.hero__social-icons i{
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.hero__social-icons i:hover{
+    color: #454277;
+}
+
+.promotion__container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promotion h1{
+    margin-bottom: 2px;
+    font-size: 30px;
+}
+
+.promotion p{
+    font-size: 23px;
+}
+
+.promotion__options{
+    flex-wrap: wrap;
+    margin-top: 24px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.promotion__buttons--options{
+    display: flex;
+    flex-wrap: wrap;
+    width:220px;
+    font-size: 20px;
+    height: 44px;
+    transition: background 0.4s;
+}
+
+.promotion__buttons--options:hover{
+    color: white;
+    background-color: #454277;
+}
+
+.pack-travel__text--align h2{
+    font-size: 30px;
+}
+
+.pack-travel__text--align p{
+    font-size: 23px;
+}
+
+.pack-travel__text--align{
+    margin: 0;
+}
+
+.block-tickets__pack{
+    width: 20%;
+}
+
+.block-tickets{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.block-tickets__slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    width: 55%;
+    margin-bottom: 0;
+    height: 420px;
+}
+
+.block-tickets__content-pack{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 440px;
+    width: 80%;
 
 }
+
+.block-tickets__dynamic-offers{
+    display: flex;
+    width: 28%;
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 4%;
+    align-items: center;
+}
+
+.block-tickets__text-offers{
+    font-size: 36px;
+}
+
+.block-tickets__text-offers span{
+    color: #4a4688;
+}
+
+.icon-suitcase{
+    height: 60px;
+    margin-left: 10%;
+}
+
+.block-tickets__pack{
+    width: 32%;
+}
+
+.block-tickets__destination{
+    font-size: 20px;
+}
+
+.block-tickets__pack--align p{
+    color: rgb(105, 105, 105);
+    font-size: 14px;
+}
+
+.block-tickets__leaving{
+    font-size: 16px;
+}
+
+.block-tickets__price{
+    font-size: 16px;
+    margin-bottom: 2%;
+}
+
+.block-tickets__button--buy-ticket{
+    height: 26px;
+    color: white;
+    cursor: pointer;
+    background-color: #454277;
+    width: 36%;
+    font-size: 16px;
+}
+
+.slick-prev-custom,.slick-next-custom {
+    display: block;
+  height: 40px;
+  background-color: #454277;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.block-tickets--align-reverse{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    flex-direction: row-reverse;
+}
+
+.block-tickets__slider-packs{
+    display: block;
+    flex-direction: row;
+    width: 100%;
+}
+
+.newsletter{
+    margin-top: 1%;
+}
+
+.newsletter__title{
+    font-size: 30px;
+}
+
+.newsletter__text{
+    font-size: 23px;
+}
+
+.newsletter__register{
+    flex-direction: row;
+}
+
+.newsletter__input{
+    height: 40px;
+    font-size: 18px;
+    width: 30%;
+}
+
+
+}
+
 
