@@ -47,7 +47,7 @@ transform: none;
 }
 
 .header__icon{
-    height: 26px;
+    height: 36px;
 }
 
 .header--align{
@@ -127,6 +127,7 @@ transform: none;
     color: white;
     height: 44px;
     font-size: 16px;
+    margin-top: 5%;
     border-radius: 5px;
     font-weight: bold;
     width: 45%;
@@ -169,10 +170,9 @@ transform: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    gap: 24px;
-    margin-top: 24px;
-    margin-bottom: 10px;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 10%;
 }
 
 .promotion__buttons--options{
@@ -207,7 +207,8 @@ transform: none;
 
 
 .pack-travel__text--align h2{
-    margin-top: 2px;
+
+    margin-top: 10%;
     font-size: 26px;
     font: bold;
 }
@@ -225,11 +226,11 @@ transform: none;
     align-content: center;
     width: 100%;
     margin-top: 5%;
-    gap: 20px;
+    gap: 30px;
 }
 
 .block-tickets__dynamic-offers{
-  display: none;
+    display: none;
 }
 
 .block-tickets__slider{
@@ -238,9 +239,14 @@ transform: none;
 }
 
 .block-tickets__content-pack{
-    width: 100%;
+    gap: 30px;
+    flex-direction: column;
+    height: auto;
 }
 
+.block-tickets--align-reverse{
+ display: none;
+}
 .icon-suitcase{
     margin: 0;
 }
@@ -248,7 +254,7 @@ transform: none;
 .block-tickets__slider{
     width: 90%;
     margin: 0;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     display: flex;
@@ -264,6 +270,7 @@ transform: none;
 .block-tickets__pack{
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
+      transition: transform 0.3s ease; 
     width: 88%;
     background-color: white;
     color: #454277;
@@ -304,7 +311,7 @@ transform: none;
 }
 
 .block-tickets__price{
-    margin: 0;
+    margin-bottom: 8%;
     font-size: 23px;
 }
 
@@ -313,7 +320,8 @@ transform: none;
     margin-right: 6%;
     border-radius: 5px;
     height: 35px;
-    color: #454277;
+    background-color: #454277;
+    color: white;
     font-size: 18px;
     width: 40%;
 }
@@ -362,67 +370,6 @@ transform: none;
 
 .slick-prev-custom,.slick-next-custom {
     display: none;
-}
-
-.footer {
- background: #454277;
-  margin: 0;
-  height: auto;
-  color: #fff;
-  padding-top: 40px;
-  font-family: "Poppins", sans-serif;
-}
-
-.footer__container {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.footer__logo h2 {
-  font-size: 28px;
-  margin-bottom: 8px;
-}
-
-.footer__links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer__links ul li {
-  margin: 8px 0;
-}
-
-.footer__links ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer__links ul li a:hover {
-  color: #00d8ff;
-}
-
-.footer__icons  {
-    display: flex;
-    margin-right: 10%;
-    justify-content: space-around;
-    font-size: 20px;
-}
-
-.footer__copy {
-  text-align: center;
-  background-color: #454277;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  margin-top: 20px;
-  padding-bottom:10px ;
-  border-top: 1px solid #283544;
-  font-size: 14px;
-  opacity: 0.7;
 }
 
 
@@ -641,11 +588,14 @@ transform: none;
     width: 26%;
     cursor: pointer;
     transition: background 0.4s;
+      transition: transform 0.4s ease;
+     
     font-size: 14px;
     height: 40px;
 }
 
 .hero__button--call-to-action:hover{
+      transform: scale(1.1); 
     background-color: #454277;
 }
 
@@ -657,10 +607,12 @@ transform: none;
 
 .hero__social-icons i{
     cursor: pointer;
+    transition: transform 0.4s ease;
     transition: color 0.4s ease;
 }
 
 .hero__social-icons i:hover{
+    transform: scale(1.1); 
     color: #454277;
 }
 
@@ -682,8 +634,11 @@ transform: none;
 }
 
 .promotion__options{
+    display: flex;
     flex-wrap: wrap;
     margin-top: 24px;
+    margin-bottom: 40px;
+    padding: 0;
     justify-content: space-between;
     flex-direction: row;
 }
@@ -694,12 +649,15 @@ transform: none;
     width:220px;
     font-size: 20px;
     height: 44px;
+    transition: transform 2s ease;
     transition: background 0.4s;
 }
 
 .promotion__buttons--options:hover{
     color: white;
     background-color: #454277;
+        transform: scale(1.1); 
+
 }
 
 .pack-travel__text--align h2{
@@ -729,6 +687,7 @@ transform: none;
 .block-tickets__slider{
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
     margin-right: 5%;
     width: 55%;
@@ -739,6 +698,7 @@ transform: none;
 .block-tickets__content-pack{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     height: 440px;
     width: 80%;
@@ -768,7 +728,14 @@ transform: none;
 }
 
 .block-tickets__pack{
+    cursor: pointer;
+    transition: transform 0.4s ease;
     width: 32%;
+}
+
+.block-tickets__pack:hover{
+        transform: scale(1.1); 
+
 }
 
 .block-tickets__destination{
@@ -819,11 +786,6 @@ transform: none;
     flex-direction: row-reverse;
 }
 
-.block-tickets__slider-packs{
-    display: block;
-    flex-direction: row;
-    width: 100%;
-}
 
 .newsletter{
     margin-top: 1%;
