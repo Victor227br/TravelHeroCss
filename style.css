@@ -88,7 +88,7 @@ transform: none;
     align-items: flex-start;
     flex-wrap: wrap;
     color: white;
-    background-image: url(sunset-8022573_1280.jpg);
+    background-image: url(FolderImgs/sunset-8022573_1280.jpg);
     background-size: cover;
     background-position: top;
     width: 100%;
@@ -199,12 +199,18 @@ transform: none;
 .pack-travel__text--align{
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 90%;
     flex-direction: column;
     color: #2C2A4A;
-    margin-left: 4.5%;
-    margin-right: 4.5%;
+ 
 }
 
+.pack-travel{
+    display: flex;
+    justify-content: center;
+
+}
 
 .pack-travel__text--align h2{
 
@@ -246,6 +252,10 @@ transform: none;
     align-items: center;
 }
 
+.block-tickets__text-offers{
+    width: 84%;
+}
+
 .block-tickets__text-offers span{
     color: #4a4688;
 }
@@ -268,7 +278,7 @@ transform: none;
   }
 
   .block-tickets__pack {
-    width: 90%;     /* antes 32% */
+    width: 90%;    
     margin-bottom: 20px;
   }
 
@@ -287,12 +297,8 @@ transform: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    justify-content: center; /* ou flex-start se quiser */
+    justify-content: center; 
   }
-
-.icon-suitcase{
-    margin: 0;
-}
 
 .block-tickets__slider{
     width: 90%;
@@ -302,7 +308,6 @@ transform: none;
     flex-direction: column;
     display: flex;
 }
-
 
 .block-tickets__content-pack{
     display: flex;
@@ -443,25 +448,21 @@ transform: none;
   color: #e3e3e3;
 }
 
-.footer__links h3,
-.footer__social h3 {
+.footer__links h3,.footer__social h3 {
   font-size: 18px;
   margin-bottom: 12px;
 }
 
-.footer__links ul,
-.footer__social ul {
+.footer__links ul,.footer__social ul {
   list-style: none;
   padding: 0;
 }
 
-.footer__links li,
-.footer__social li {
+.footer__links li,.footer__social li {
   margin-bottom: 8px;
 }
 
-.footer__links a,
-.footer__social a {
+.footer a {
   text-decoration: none;
   color: #d7d7d7;
   font-size: 16px;
@@ -561,6 +562,20 @@ transform: none;
     font-size: 32px;
 }
 
+.pack-travel{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pack-travel__text--align{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
 .pack-travel__text--align h2{
     margin: 0;
     margin-top: 5%;
@@ -569,48 +584,81 @@ transform: none;
 
 .pack-travel__text--align p{
     font-size: 33px;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
-.block-tickets{
-    display: flex;
-    flex-direction: row;
-    gap: 4%;
-    justify-content: space-aroud;
-    flex-wrap: wrap;
+.block-tickets__content-pack{
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      height: auto;
+      gap: 40px;
 }
 
 .block-tickets__pack{
-    margin-bottom: 4%;
-    width: 44%;
+      width: 72%;   
+      gap: 20px;
+      margin-bottom: 0;
 }
 
-.block-tickets__pack--align{
-    font-size: 24px;
+.block-tickets--align-reverse{
+    flex-direction: row-reverse;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: auto;
+}
+
+.block-tickets__slider{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.block-tickets__text-offers{
+    font-size: 46px;
+}
+
+.icon-suitcase{
+    height: 90px;
+}
+
+.block-tickets--align-reverse{
+    flex-direction: column;      
+    justify-content: center;    
+    width: 100%;       
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.block-tickets__pack--align p{
+    font-size: 32px;
 }
 
 .block-tickets__leaving{
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .block-tickets__destination{
-    font-size: 28px;
+    font-size: 40px;
 }
 
 .block-tickets__price{
-    font-size: 27px;
+    font-size: 33px;
 }
+
 
 .block-tickets__button--buy-ticket{
     display: flex;
     align-items: center;
-    justify-content: center; 
-    font-size: 23px;
-    height: 40px;
+    justify-content: center;
+    width: 32%; 
+    font-size: 30px;
+    height: 46px;
 }
 
 .block-tickets__content-final{
-    margin-bottom: 13%;
+    margin-bottom: 3%;
     margin-right: 2% ;
 }
 
@@ -625,6 +673,7 @@ transform: none;
 }
 
 .newsletter__text{
+    font-size: 30px;
     margin-bottom: 4%;
 }
 
@@ -635,9 +684,46 @@ transform: none;
 
 .newsletter__input{
     font-size: 28px;
-    height: 50px;
+    height: 60px;
 }
+
+.footer__container {
+    flex-direction: column;    
+    text-align: center;       
+    align-items: center;       
+    gap: 40px;                 
 }
+
+.footer__links ul li {
+    margin: 12px 0;            
+}
+
+.footer__icons img {
+    margin: 0 10px;            
+}
+
+.footer__logo  {
+    font-size: 39px;
+}
+
+.footer h3{
+    font-size: 33px;
+}
+
+.footer p{
+    font-size: 29px;
+}
+
+.footer a{
+    font-size: 29px;
+}
+
+.footer__container {
+    width: 100%;               
+  }
+
+}
+
 
 @media (min-width: 1025px){
 
@@ -668,7 +754,7 @@ transform: none;
 }
 
 .hero{
-    background-image: url(photoherocss.jpg);
+    background-image: url(FolderImgs/photoherocss.jpg);
 }
 
 .hero__itens--align{
@@ -810,7 +896,6 @@ transform: none;
     align-items: center;
     height: 440px;
     width: 80%;
-
 }
 
 .block-tickets__dynamic-offers{
@@ -843,7 +928,6 @@ transform: none;
 
 .block-tickets__pack:hover{
         transform: scale(1.1); 
-
 }
 
 .block-tickets__destination{
@@ -894,7 +978,6 @@ transform: none;
     flex-direction: row-reverse;
 }
 
-
 .newsletter{
     margin-top: 1%;
 }
@@ -909,7 +992,9 @@ transform: none;
 
 .newsletter__register{
     flex-direction: row;
+    margin-bottom: 2%;
 }
+
 
 .newsletter__input{
     height: 40px;
@@ -927,10 +1012,26 @@ transform: none;
     max-width: 30%;
   }
 
-  .footer__links ul li,
-  .footer__social ul li {
+  .footer__links ul li,.footer__social ul li {
     margin-bottom: 6px;
   }
+
+.footer__logo{
+    font-size: 29px;
+}
+
+.footer h3{
+    font-size: 24px
+}
+
+.footer p{
+    font-size: 18px;
+}
+
+.footer a{
+    font-size: 18px;
+    
+}
 
 
 }
