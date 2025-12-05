@@ -1,33 +1,18 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: "Roboto Flex", sans-serif;
     background-color: rgb(247, 243, 255);
-    font-family: 'Playfair Display', serif;
 }
 
 h1 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Roboto Flex", sans-serif;
     font-weight: 700;
 }
 
 button{
     border: 0000;
 }
-
-/* @keyframes hasShown{
-    from{
-    opacity: 0;
-    transform:translateX(-50px);
-    }
-to{
-opacity: 1;
-transform: none;
-    }
-}
-
-.hasShown{
-    animation: hasShown 2s forwards;
-} */
 
 .header{
     display: flex;
@@ -380,8 +365,10 @@ transform: none;
 
 .newsletter{
     display: flex;
+    margin-top: 8%;    
+    padding-top:5%;
+    padding-bottom: 4%;
     align-items: center;
-    margin-top: 20%;
     justify-content: center;
     flex-direction: column;
     background-color: #2C2A4A;
@@ -391,7 +378,7 @@ transform: none;
 .newsletter__title{
     font-size: 26px ;
     font: bold;
-    margin: 8px;
+    margin: 5px;
 }
 
 .newsletter__text{
@@ -749,6 +736,17 @@ transform: none;
     justify-content: space-between;
 }
 
+.header__item-list{
+    color: white;
+    transition: color 0.4s ease;
+    transition: transform 0.4s ease;
+}
+
+.header__item-list:hover{
+    transform: scale(1.1); 
+    color: #625bec;
+}
+
 .header__logo{
     font-size: 22px;
 }
@@ -783,7 +781,6 @@ transform: none;
     cursor: pointer;
     transition: background 0.4s;
       transition: transform 0.4s ease;
-     
     font-size: 14px;
     height: 40px;
 }
@@ -979,10 +976,14 @@ transform: none;
 }
 
 .newsletter{
+    padding-top: 2%;
     margin-top: 1%;
+    padding-bottom: 1%;
 }
 
 .newsletter__title{
+     padding-top: 0%;
+     margin: 0;
     font-size: 30px;
 }
 
@@ -994,7 +995,6 @@ transform: none;
     flex-direction: row;
     margin-bottom: 2%;
 }
-
 
 .newsletter__input{
     height: 40px;
