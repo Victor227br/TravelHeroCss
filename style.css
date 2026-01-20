@@ -224,8 +224,6 @@ button{
 
 .block-tickets__dynamic-offers{
     width: 90%;
-    /* margin-left: 2%;
-    margin-right: 6%; */
     display: flex;
     margin-bottom: 3%;
     justify-content: center;
@@ -237,6 +235,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
 }
 
 .block-tickets__text-offers{
@@ -252,14 +251,13 @@ button{
     align-items: center;
   }
 
-  .block-tickets__slider {
+.block-tickets__slider {
     width: 70%;
     height: auto;
     margin-right: 0;
   }
 
-  .block-tickets__slider {
-  /* width: 50%; */
+.block-tickets__slider {
   margin: 0 auto;
 }
 
@@ -268,9 +266,12 @@ button{
   justify-content: center;
 }
 
+.slick-list{
+    margin-bottom: 6%;
+}
+
 
 .block-tickets__pack {
-    width: 90%;
     max-width: 320px;
     margin: 0 auto;
     background-color: white;
@@ -343,7 +344,7 @@ button{
     height: auto;
     margin-top: 0;
     margin-right: 6%;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
 }
 
 .block-tickets__price{
@@ -407,6 +408,10 @@ button{
 
 .slick-prev-custom,.slick-next-custom {
     display: none;
+}
+
+.slick-dots{
+    padding-top: 10%;
 }
 
 .footer {
@@ -877,12 +882,18 @@ button{
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    margin-right: 5%;
     width: 55%;
     margin-bottom: 0;
     height: 420px;
 }
 
+.block-tickets__slider--align-reverse{
+    margin-right: 10%; 
+}
+
+ .block-tickets__dynamic-offers--reverse{
+    margin-right: 5%;
+ }
 
 .block-tickets__dynamic-offers{
     display: flex;
@@ -957,7 +968,7 @@ button{
 
 .block-tickets--align-reverse{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row-reverse; 
 }
