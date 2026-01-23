@@ -349,13 +349,14 @@ button{
 
 .block-tickets__price{
     margin-bottom: 8%;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .block-tickets__button--buy-ticket{
     margin-right: 6%;
     border-radius: 5px;
     height: 35px;
+    margin-bottom: 2%;
     background-color: #454277;
     color: white;
     font-size: 18px;
@@ -370,7 +371,7 @@ button{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #2C2A4A;
+    background-color: #454277;
     color: white;
 }
 
@@ -381,15 +382,15 @@ button{
 }
 
 .newsletter__text{
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 22px;
 }
 
 .newsletter__register{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     width: 100%;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     margin-bottom: 14px;
@@ -398,13 +399,29 @@ button{
 }
 
 .newsletter__input{
-    width: 92%;
-    font-size: 20px;
-    height: 45px;
+    width: 82%;
+    font-size: 18px;
+    height: 6vh;
     margin: 10px;
     border-radius: 5px;
     border: 0000;
 }
+
+
+.newsletter__button--submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14%;
+    height: 6vh;
+    background-color:#2C2A4A;
+    border: 0000;
+    border-radius: 4px ;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
 
 .slick-prev-custom,.slick-next-custom {
     display: none;
@@ -415,65 +432,108 @@ button{
 }
 
 .footer {
-  background-color: #454277;
+  background-color: #2C2A4A;
   color: #fff;
-  padding: 40px 20px;
-  font-family: Arial, sans-serif;
 }
 
 .footer__container {
   display: flex;
+    padding: 40px 20px;
   flex-direction: column;
-  gap: 30px;
+  gap: 6px;
+}
+
+.footer__brand{
+   display: flex;
+    margin-left: 10px;
+    margin-bottom: 0;
+   flex-direction: column;
 }
 
 .footer__logo {
-  font-size: 28px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 22px;
+  gap: 10px;
+  margin: 0;
   font-weight: bold;
 }
 
-.footer__desc {
-  font-size: 14px;
-  margin-top: 6px;
-  color: #e3e3e3;
+.footer__logo img{
+    height: 5vh;
 }
 
-.footer__links h3,.footer__social h3 {
-  font-size: 18px;
-  margin-bottom: 12px;
+.footer__description{
+    font-size: 20px;
+    margin-top: 4px;
+    font-weight: 400;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
-.footer__links ul,.footer__social ul {
-  list-style: none;
-  padding: 0;
+.footer__links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
 }
 
-.footer__links li,.footer__social li {
-  margin-bottom: 8px;
+.footer__links h3{
+    font-size: 22px;
+    color: #625bec;
 }
 
-.footer a {
-  text-decoration: none;
-  color: #d7d7d7;
-  font-size: 16px;
-  transition: 0.3s;
+.footer__links nav{
+    display: flex;
+    gap: 24px;
+    font-weight: 400;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.footer__links a:hover,.footer__social a:hover {
-  color: #ffffff;
+.footer__links a{
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 800;
+    text-decoration: none;
 }
 
-.footer__bottom {
-  margin-top: 30px;
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255,255,255,0.2);
-  font-size: 14px;
+.footer__social-media{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.footer__social-media h3{
+    font-size: 22px;
+    color: #625bec;
+}
+
+.footer__social-media nav{
+    display: flex;
+    gap: 20px;
+}
+
+.footer__social-media i{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.footer__bottom{
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    color: #454277;
 }
 
 
 @media (min-width: 750px){
-    /* Tablet */
 
 .header{
     display: flex;
@@ -578,8 +638,6 @@ button{
     margin-bottom: 5%;
 }
 
-
-
 .block-tickets__pack{
     width: 72%;   
     gap: 20px;
@@ -599,7 +657,6 @@ button{
     align-items: center;
     width: 100%;
 }
-
 
 .block-tickets__text-offers{
     font-size: 46px;
@@ -632,7 +689,6 @@ button{
 .block-tickets__price{
     font-size: 33px;
 }
-
 
 .block-tickets__button--buy-ticket{
     display: flex;
@@ -673,7 +729,7 @@ button{
     height: 60px;
 }
 
-.footer__container {
+/* .footer__container {
     flex-direction: column;    
     text-align: center;       
     align-items: center;       
@@ -706,13 +762,10 @@ button{
 
 .footer__container {
     width: 100%;               
-  }
-
+  } */
 }
 
-@media (min-width: 1025px){
-
-/* Computer/Desktop */
+@media (min-width: 1024px){
 
 .header{
     align-items: center;
@@ -786,7 +839,7 @@ button{
 }
 
 .hero__button--call-to-action:hover{
-      transform: scale(1.1); 
+    transform: scale(1.1); 
     background-color: #454277;
 }
 
@@ -980,8 +1033,8 @@ button{
 }
 
 .newsletter__title{
-     padding-top: 0%;
-     margin: 0;
+    padding-top: 0%;
+    margin: 0;
     font-size: 30px;
 }
 
@@ -990,7 +1043,7 @@ button{
 }
 
 .newsletter__register{
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 2%;
 }
 
@@ -1000,36 +1053,44 @@ button{
     width: 30%;
 }
 
-.footer__container {
+.footer__container{
+    display: flex;
+    margin:0;
+    justify-content: space-around;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+}
 
-  .footer__logo-area {
-    max-width: 30%;
-  }
-
-  .footer__links ul li,.footer__social ul li {
-    margin-bottom: 6px;
-  }
+.footer__brand{
+    width: 30%;
+}
 
 .footer__logo{
-    font-size: 29px;
+    font-size: 20px;
 }
 
-.footer h3{
-    font-size: 24px
+.footer__logo img{
+    height: 6vh;
 }
 
-.footer p{
+.footer__description{
     font-size: 18px;
 }
 
-.footer a{
-    font-size: 18px;
+.footer__social-media{
+    justify-content: flex-start;
+    gap: 12px;
 }
 
+.footer__links{
+    display: flex;
+    align-items:flex-start;
 }
+
+.footer__links nav{
+    gap: 14px;
+    margin-left: 10px;
+}
+}
+
 
 
