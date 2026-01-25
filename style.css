@@ -438,7 +438,7 @@ button{
 
 .footer__container {
   display: flex;
-    padding: 40px 20px;
+  padding: 40px 20px;
   flex-direction: column;
   gap: 6px;
 }
@@ -729,40 +729,7 @@ button{
     height: 60px;
 }
 
-/* .footer__container {
-    flex-direction: column;    
-    text-align: center;       
-    align-items: center;       
-    gap: 40px;                 
-}
 
-.footer__links ul li {
-    margin: 12px 0;            
-}
-
-.footer__icons img {
-    margin: 0 10px;            
-}
-
-.footer__logo  {
-    font-size: 39px;
-}
-
-.footer h3{
-    font-size: 33px;
-}
-
-.footer p{
-    font-size: 29px;
-}
-
-.footer a{
-    font-size: 29px;
-}
-
-.footer__container {
-    width: 100%;               
-  } */
 }
 
 @media (min-width: 1024px){
@@ -1090,6 +1057,11 @@ button{
     gap: 14px;
     margin-left: 10px;
 }
+
+.footer__bottom{
+    font-size: 18px;
+}
+
 }
 
 
