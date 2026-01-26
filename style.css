@@ -5,6 +5,10 @@ body{
     background-color: rgb(247, 243, 255);
     width: 100%;
     overflow-x: hidden;
+}
+
+html{
+      scroll-behavior: smooth;
 
 }
 
@@ -16,8 +20,6 @@ h1 h2 {
 button{
     border: 0000;
 }
-
-/* firstMobile */
 
 .header{
     display: flex;
@@ -249,13 +251,13 @@ button{
 .block-tickets {
     flex-direction: column;
     align-items: center;
-  }
+}
 
 .block-tickets__slider {
     width: 70%;
     height: auto;
     margin-right: 0;
-  }
+}
 
 .block-tickets__slider {
   margin: 0 auto;
@@ -269,7 +271,6 @@ button{
 .slick-list{
     margin-bottom: 6%;
 }
-
 
 .block-tickets__pack {
     max-width: 320px;
@@ -307,7 +308,6 @@ button{
 .block-tickets__slider{
     display: flex;
 } 
-
 
 .block-tickets__pack img{
     width: 100%;
@@ -412,9 +412,9 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 14%;
-    height: 6vh;
-    background-color:#2C2A4A;
+    width: 40%;
+    height: 4vh;
+    background-color:#6d65db;
     border: 0000;
     border-radius: 4px ;
     cursor: pointer;
@@ -533,7 +533,7 @@ button{
 }
 
 
-@media (min-width: 750px){
+@media (min-width: 750px) and (max-width: 1024px){
 
 .header{
     display: flex;
@@ -638,24 +638,37 @@ button{
     margin-bottom: 5%;
 }
 
-.block-tickets__pack{
-    width: 72%;   
-    gap: 20px;
+.block-tickets__slider {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-slide {
+    display: block;
+    padding: 0 2px; 
+    box-sizing: border-box;
+}
+
+.block-tickets__slider {
+    margin: 0 -8px;
+}
+
+.block-tickets__pack {
+    width: 100%;
     margin-bottom: 0;
 }
+
+
 
 .block-tickets--align-reverse{
     flex-direction: row-reverse;
     margin-top: 2%;
     margin-bottom: 2%;
     width: auto;
-}
-
-.block-tickets__slider{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
 }
 
 .block-tickets__text-offers{
@@ -729,18 +742,23 @@ button{
     height: 60px;
 }
 
+.newsletter__button--submit{
+    width: 23%;
+    font-size: 25px;
+    height: 5vh;
+}
 
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1025px){
 
 .header{
     align-items: center;
-    height: 64px;
+    height: 10vh;
 }
 
 .header--align{
-    margin-left: 6%;
+    margin-left: 4%;
     align-items: center;
     margin-right: 6%;
 }
@@ -752,7 +770,7 @@ button{
 .header__list{
     display: flex;
     width: 26%;
-    font-size: 16px;
+    font-size: 100%;
     justify-content: space-between;
 }
 
@@ -768,7 +786,7 @@ button{
 }
 
 .header__logo{
-    font-size: 22px;
+    font-size: 140%;
 }
 
 .hero{
@@ -778,6 +796,7 @@ button{
 .hero__itens--align{
     margin-top: 7%;
     width: 42%;
+    margin-left: 5%;
     margin-bottom: 20%;
 }
 
@@ -806,7 +825,7 @@ button{
 }
 
 .hero__button--call-to-action:hover{
-    transform: scale(1.1); 
+    transform: scale(1.07); 
     background-color: #454277;
 }
 
@@ -857,17 +876,21 @@ button{
 .promotion__buttons--options{
     display: flex;
     flex-wrap: wrap;
-    width:220px;
+    width: 220px;
     font-size: 20px;
+    color: #454277;
     height: 44px;
-    transition: transform 2s ease;
-    transition: background 0.4s;
+    transition:
+      color 0.4s ease,
+      background-color 0.4s ease,
+      transform 0.4s ease;
+
 }
 
 .promotion__buttons--options:hover{
-    color: white;
+    color: #fff;
+    transform: scale(1.07); 
     background-color: #454277;
-    transform: scale(1.1); 
 }
 
 .pack-travel__text--align h2{
@@ -971,12 +994,18 @@ button{
     background-color: #454277;
     width: 36%;
     font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.block-tickets__button--buy-ticket:hover{
+    transform: scale(1.1);
 }
 
 .slick-prev-custom,.slick-next-custom {
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 26px;
+  width: 26px;
   background-color: #454277;
   color: #fff;
   border: none;
@@ -1017,7 +1046,18 @@ button{
 .newsletter__input{
     height: 40px;
     font-size: 18px;
-    width: 30%;
+    width: 400px;
+}
+
+.newsletter__button--submit{
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    transition: transform 0.4s ease;
+}
+
+.newsletter__button--submit:hover{
+    transform: scale(1.1);
 }
 
 .footer__container{
