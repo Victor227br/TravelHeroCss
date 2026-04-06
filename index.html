@@ -12,14 +12,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 
 <title>Travel Company</title>
-
 <body>
+
   <header id="main" class="header">
     <div class="header--align">
       <div class="header__logo-icon">
       <img class="header__icon" src="FolderImgs/icons8-emoji-globo-mostrando-américas-48 (1).png" alt="">
       <h2 class="header__logo hasShown" >Travel</h2>
       </div>
+
       <ul class="header__list">
         <li class="header__item-list"><a class="header__item-list"  href="#">Home</a></li>
         <li class="header__item-list"><a class="header__item-list" href="#">About</a></li>
@@ -27,10 +28,17 @@
         <li class="header__item-list"><a class="header__item-list" href="#">Contact</a></li>
       </ul>
 
+        <ul class="header__list--mobile">
+        <li class="header__item-list--mobile"><a class="header__item-list--mobile"  href="#">Home</a></li>
+        <li class="header__item-list--mobile"><a class="header__item-list--mobile" href="#">About</a></li>
+        <li class="header__item-list--mobile"><a  class="header__item-list--mobile" href="#">Services</a></li>
+        <li class="header__item-list--mobile"><a class="header__item-list--mobile" href="#">Contact</a></li>
+      </ul>
+
     <div class="header__mobile-menu">
-        <div class="header__line"></div>
-        <div class="header__line"></div>
-        <div class="header__line"></div>
+      <span class="header__line"></span>
+      <span class="header__line"></span>
+    <span class="header__line"></span>
     </div>
 
 </div>  
@@ -560,7 +568,30 @@ $(document).ready(function () {
     ]
   });
 });
+</script>
 
+<script>
+const menuBtn = document.querySelector('.header__mobile-menu');
+const navList = document.querySelector('.header__list--mobile');
+
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('active');
+    navList.classList.toggle('active');
+});
+  document.querySelectorAll('.header__list--mobile a').forEach(link => {
+  link.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        navList.classList.remove('active');
+    });
+
+    
+window.addEventListener('scroll', () => {
+    if(navList.classList.contains('active')){
+        navList.classList.remove('active');
+        menuBtn.classList.remove('active');
+    }
+});
+});
 </script>
 
   </body>
